@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_42b3df0310114a3b8414f6fe4ff813b6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_42b3df0310114a3b8414f6fe4ff813b6" ></div>
+        
+</body>
+<script>    
+    
+            var map_42b3df0310114a3b8414f6fe4ff813b6 = L.map(
+                "map_42b3df0310114a3b8414f6fe4ff813b6",
+                {
+                    center: [22.0, 77.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9e50737541e44f3981d1f1dd4a109f66 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_42b3df0310114a3b8414f6fe4ff813b6);
+        
+    
+            var feature_group_9f0853e44bbc4495a96efc134633897d = L.featureGroup(
+                {}
+            ).addTo(map_42b3df0310114a3b8414f6fe4ff813b6);
+        
+    
+            var marker_eeff24a983344b61b1ff8f0a0a2813c5 = L.marker(
+                [10.8505, 76.2711],
+                {}
+            ).addTo(feature_group_9f0853e44bbc4495a96efc134633897d);
+        
+    
+            var icon_2c6fb47b884e40a0b58d976375260ec3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_eeff24a983344b61b1ff8f0a0a2813c5.setIcon(icon_2c6fb47b884e40a0b58d976375260ec3);
+        
+    
+        var popup_ef6ca05368f84d16864b9f9d1c0afa5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8af7cef132894aa5a36e75ab7f0f7974 = $(`<div id="html_8af7cef132894aa5a36e75ab7f0f7974" style="width: 100.0%; height: 100.0%;">Kerala Total samples: 13339 Negative : 12335 Total Positive: 364</div>`)[0];
+            popup_ef6ca05368f84d16864b9f9d1c0afa5b.setContent(html_8af7cef132894aa5a36e75ab7f0f7974);
+        
+
+        marker_eeff24a983344b61b1ff8f0a0a2813c5.bindPopup(popup_ef6ca05368f84d16864b9f9d1c0afa5b)
+        ;
+
+        
+    
+    
+            var marker_ba2f7e6605a9438abc4ee0ba406e0b47 = L.marker(
+                [11.1271, 78.6569],
+                {}
+            ).addTo(feature_group_9f0853e44bbc4495a96efc134633897d);
+        
+    
+            var icon_2e387a94c3fc4f91a1a1e81f891b0c5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_ba2f7e6605a9438abc4ee0ba406e0b47.setIcon(icon_2e387a94c3fc4f91a1a1e81f891b0c5a);
+        
+    
+        var popup_3182ae1dde484cae8e336a11db724f37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e102eb2a6b5644448cf1f8f4d39db72c = $(`<div id="html_e102eb2a6b5644448cf1f8f4d39db72c" style="width: 100.0%; height: 100.0%;">Tamil Nadu Total samples: 8410 Negative : 6838 Total Positive: 911</div>`)[0];
+            popup_3182ae1dde484cae8e336a11db724f37.setContent(html_e102eb2a6b5644448cf1f8f4d39db72c);
+        
+
+        marker_ba2f7e6605a9438abc4ee0ba406e0b47.bindPopup(popup_3182ae1dde484cae8e336a11db724f37)
+        ;
+
+        
+    
+    
+            var marker_82025b444ab24e7385a0c5dd795b5aa4 = L.marker(
+                [22.9734, 78.6569],
+                {}
+            ).addTo(feature_group_9f0853e44bbc4495a96efc134633897d);
+        
+    
+            var icon_a8bdcadb18ab448b8ec02f72cb68a35f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_82025b444ab24e7385a0c5dd795b5aa4.setIcon(icon_a8bdcadb18ab448b8ec02f72cb68a35f);
+        
+    
+        var popup_b0c886aa85c74a5d8d659648fe14ee6f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9c60908ca6c4df88fb8464093ed90c7 = $(`<div id="html_f9c60908ca6c4df88fb8464093ed90c7" style="width: 100.0%; height: 100.0%;">Madhya Pradesh Total samples: 7049 Negative : 4840 Total Positive: 451</div>`)[0];
+            popup_b0c886aa85c74a5d8d659648fe14ee6f.setContent(html_f9c60908ca6c4df88fb8464093ed90c7);
+        
+
+        marker_82025b444ab24e7385a0c5dd795b5aa4.bindPopup(popup_b0c886aa85c74a5d8d659648fe14ee6f)
+        ;
+
+        
+    
+    
+            var marker_d365a316ba444c9bbffc9ff4466c2b74 = L.marker(
+                [19.7515, 75.7139],
+                {}
+            ).addTo(feature_group_9f0853e44bbc4495a96efc134633897d);
+        
+    
+            var icon_cfe22aa6c61f43498cfe865303a605bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_d365a316ba444c9bbffc9ff4466c2b74.setIcon(icon_cfe22aa6c61f43498cfe865303a605bc);
+        
+    
+        var popup_750c429d07484a1297d00608b350eecb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8e5cffb23ae454a8d67c2d94b3e8b44 = $(`<div id="html_a8e5cffb23ae454a8d67c2d94b3e8b44" style="width: 100.0%; height: 100.0%;">Maharashtra Total samples: 31841 Negative : 30477 Total Positive: 1364</div>`)[0];
+            popup_750c429d07484a1297d00608b350eecb.setContent(html_a8e5cffb23ae454a8d67c2d94b3e8b44);
+        
+
+        marker_d365a316ba444c9bbffc9ff4466c2b74.bindPopup(popup_750c429d07484a1297d00608b350eecb)
+        ;
+
+        
+    
+    
+            var marker_10769568c7464c92a177cbfc98c74389 = L.marker(
+                [20.9517, 85.0985],
+                {}
+            ).addTo(feature_group_9f0853e44bbc4495a96efc134633897d);
+        
+    
+            var icon_dde0fed3bbd9483c955b6a0e3230cfdb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_10769568c7464c92a177cbfc98c74389.setIcon(icon_dde0fed3bbd9483c955b6a0e3230cfdb);
+        
+    
+        var popup_2af3c45a18754a6ab8d9420c39946396 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8e35a253173407789ba46d7063c420c = $(`<div id="html_f8e35a253173407789ba46d7063c420c" style="width: 100.0%; height: 100.0%;">Orissa Total samples: 3249 Negative : 3201 Total Positive: 48</div>`)[0];
+            popup_2af3c45a18754a6ab8d9420c39946396.setContent(html_f8e35a253173407789ba46d7063c420c);
+        
+
+        marker_10769568c7464c92a177cbfc98c74389.bindPopup(popup_2af3c45a18754a6ab8d9420c39946396)
+        ;
+
+        
+    
+    
+            var marker_29d4904799af4273b68b0b8194d0bd6a = L.marker(
+                [31.1471, 75.3412],
+                {}
+            ).addTo(feature_group_9f0853e44bbc4495a96efc134633897d);
+        
+    
+            var icon_2ee1a47a1be94407b2d01b850c4fb947 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_29d4904799af4273b68b0b8194d0bd6a.setIcon(icon_2ee1a47a1be94407b2d01b850c4fb947);
+        
+    
+        var popup_39c03a993a4e42e89025dfbb5507b476 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f4e1bf3c16649938084de7bd627df3a = $(`<div id="html_2f4e1bf3c16649938084de7bd627df3a" style="width: 100.0%; height: 100.0%;">Punjab Total samples: 3461 Negative : 2972 Total Positive: 151</div>`)[0];
+            popup_39c03a993a4e42e89025dfbb5507b476.setContent(html_2f4e1bf3c16649938084de7bd627df3a);
+        
+
+        marker_29d4904799af4273b68b0b8194d0bd6a.bindPopup(popup_39c03a993a4e42e89025dfbb5507b476)
+        ;
+
+        
+    
+    
+            var marker_12feb28a6fae4889ad13e2e59275b767 = L.marker(
+                [27.0238, 74.2179],
+                {}
+            ).addTo(feature_group_9f0853e44bbc4495a96efc134633897d);
+        
+    
+            var icon_fe2ee18a54fc4007ba86ec21f51ead35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_12feb28a6fae4889ad13e2e59275b767.setIcon(icon_fe2ee18a54fc4007ba86ec21f51ead35);
+        
+    
+        var popup_cc9eaa72f279462fbba2b2020548071f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_603eac756e044e888a816bec9f044a9c = $(`<div id="html_603eac756e044e888a816bec9f044a9c" style="width: 100.0%; height: 100.0%;">Rajasthan Total samples: 22324 Negative : 20673 Total Positive: 520</div>`)[0];
+            popup_cc9eaa72f279462fbba2b2020548071f.setContent(html_603eac756e044e888a816bec9f044a9c);
+        
+
+        marker_12feb28a6fae4889ad13e2e59275b767.bindPopup(popup_cc9eaa72f279462fbba2b2020548071f)
+        ;
+
+        
+    
+    
+            var marker_02a114c4b8574cbc8134b4cbae2c1c4e = L.marker(
+                [15.9129, 79.74],
+                {}
+            ).addTo(feature_group_9f0853e44bbc4495a96efc134633897d);
+        
+    
+            var icon_4c0b55fe831449c6b3dd2cb1f86af457 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_02a114c4b8574cbc8134b4cbae2c1c4e.setIcon(icon_4c0b55fe831449c6b3dd2cb1f86af457);
+        
+    
+        var popup_a1ec484ff7cf4312928e84494661650d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57d58c64e52c4f76bf7b2b6a6bd1f6a6 = $(`<div id="html_57d58c64e52c4f76bf7b2b6a6bd1f6a6" style="width: 100.0%; height: 100.0%;">Andhra Pradesh Total samples: 6374 Negative : 5993 Total Positive: 381</div>`)[0];
+            popup_a1ec484ff7cf4312928e84494661650d.setContent(html_57d58c64e52c4f76bf7b2b6a6bd1f6a6);
+        
+
+        marker_02a114c4b8574cbc8134b4cbae2c1c4e.bindPopup(popup_a1ec484ff7cf4312928e84494661650d)
+        ;
+
+        
+    
+    
+            var marker_c0dedf650027411892f3737897613943 = L.marker(
+                [30.733, 76.7794],
+                {}
+            ).addTo(feature_group_9f0853e44bbc4495a96efc134633897d);
+        
+    
+            var icon_466b274d10e64b99971314c37b96ed04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c0dedf650027411892f3737897613943.setIcon(icon_466b274d10e64b99971314c37b96ed04);
+        
+    
+        var popup_8e19d26b2e1e4d8c99a4743d858ae6cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_002c8e113bdd456288e4bfe5a213a08e = $(`<div id="html_002c8e113bdd456288e4bfe5a213a08e" style="width: 100.0%; height: 100.0%;">Chandigarh Total samples: 223 Negative : 199 Total Positive: 19</div>`)[0];
+            popup_8e19d26b2e1e4d8c99a4743d858ae6cc.setContent(html_002c8e113bdd456288e4bfe5a213a08e);
+        
+
+        marker_c0dedf650027411892f3737897613943.bindPopup(popup_8e19d26b2e1e4d8c99a4743d858ae6cc)
+        ;
+
+        
+    
+    
+            var marker_d78d20fb7c77419cb9514dd11dab464f = L.marker(
+                [28.7041, 77.1025],
+                {}
+            ).addTo(feature_group_9f0853e44bbc4495a96efc134633897d);
+        
+    
+            var icon_5d3a0160007a49459adff0f9c3f84520 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_d78d20fb7c77419cb9514dd11dab464f.setIcon(icon_5d3a0160007a49459adff0f9c3f84520);
+        
+    
+        var popup_9e685fe2c16e4f5b8e1551ba9c317a92 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e48a87067eb480bbe1bb6b27e87add3 = $(`<div id="html_0e48a87067eb480bbe1bb6b27e87add3" style="width: 100.0%; height: 100.0%;">Delhi Total samples: 11061 Negative : 9662 Total Positive: 903</div>`)[0];
+            popup_9e685fe2c16e4f5b8e1551ba9c317a92.setContent(html_0e48a87067eb480bbe1bb6b27e87add3);
+        
+
+        marker_d78d20fb7c77419cb9514dd11dab464f.bindPopup(popup_9e685fe2c16e4f5b8e1551ba9c317a92)
+        ;
+
+        
+    
+    
+            var marker_bf8e56fc81624efa8bf5eac2229f6321 = L.marker(
+                [22.2587, 71.1924],
+                {}
+            ).addTo(feature_group_9f0853e44bbc4495a96efc134633897d);
+        
+    
+            var icon_975fb4f8aee64dc7a9674f3727e2afeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_bf8e56fc81624efa8bf5eac2229f6321.setIcon(icon_975fb4f8aee64dc7a9674f3727e2afeb);
+        
+    
+        var popup_ec4e32d4505c485ba391da5ac3632d72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50a13ea946dd40e499c571d992d5b471 = $(`<div id="html_50a13ea946dd40e499c571d992d5b471" style="width: 100.0%; height: 100.0%;">Gujarat Total samples: 7718 Negative : 7237 Total Positive: 378</div>`)[0];
+            popup_ec4e32d4505c485ba391da5ac3632d72.setContent(html_50a13ea946dd40e499c571d992d5b471);
+        
+
+        marker_bf8e56fc81624efa8bf5eac2229f6321.bindPopup(popup_ec4e32d4505c485ba391da5ac3632d72)
+        ;
+
+        
+    
+    
+            var marker_dc548ca661ac4a14800b7d138309023e = L.marker(
+                [33.7782, 76.5762],
+                {}
+            ).addTo(feature_group_9f0853e44bbc4495a96efc134633897d);
+        
+    
+            var icon_10bd310275c444a0839b31f10b8bfdc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_dc548ca661ac4a14800b7d138309023e.setIcon(icon_10bd310275c444a0839b31f10b8bfdc1);
+        
+    
+        var popup_43a718607b59489e8bfb09cfa777df8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e7da79e1c70437cb1fd02816b40eb72 = $(`<div id="html_7e7da79e1c70437cb1fd02816b40eb72" style="width: 100.0%; height: 100.0%;">Jammu and Kashmir Total samples: 2961 Negative : 2754 Total Positive: 207</div>`)[0];
+            popup_43a718607b59489e8bfb09cfa777df8c.setContent(html_7e7da79e1c70437cb1fd02816b40eb72);
+        
+
+        marker_dc548ca661ac4a14800b7d138309023e.bindPopup(popup_43a718607b59489e8bfb09cfa777df8c)
+        ;
+
+        
+    
+    
+            var marker_5faa58d6322243988516222c04671e3f = L.marker(
+                [15.3173, 75.7139],
+                {}
+            ).addTo(feature_group_9f0853e44bbc4495a96efc134633897d);
+        
+    
+            var icon_33ee0cc912394cd39b8a112de8272533 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5faa58d6322243988516222c04671e3f.setIcon(icon_33ee0cc912394cd39b8a112de8272533);
+        
+    
+        var popup_6b65f29950af4c8da5b63c9a80654a11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0782cd84878423aaad82a4688c7241a = $(`<div id="html_c0782cd84878423aaad82a4688c7241a" style="width: 100.0%; height: 100.0%;">Karnataka Total samples: 7975 Negative : 7673 Total Positive: 207</div>`)[0];
+            popup_6b65f29950af4c8da5b63c9a80654a11.setContent(html_c0782cd84878423aaad82a4688c7241a);
+        
+
+        marker_5faa58d6322243988516222c04671e3f.bindPopup(popup_6b65f29950af4c8da5b63c9a80654a11)
+        ;
+
+        
+    
+    
+            var marker_214c77d324a847cdbfd32e496fd15d45 = L.marker(
+                [26.8467, 80.9462],
+                {}
+            ).addTo(feature_group_9f0853e44bbc4495a96efc134633897d);
+        
+    
+            var icon_fa46e28e605845c486bf6055f6f771a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_214c77d324a847cdbfd32e496fd15d45.setIcon(icon_fa46e28e605845c486bf6055f6f771a0);
+        
+    
+        var popup_7ae71d0e4dd44f07a6f38d70567b25e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b948ff59ef443069f47286c66c23a97 = $(`<div id="html_9b948ff59ef443069f47286c66c23a97" style="width: 100.0%; height: 100.0%;">Uttar Pradesh Total samples: 4662 Negative : 3246 Total Positive: 1416</div>`)[0];
+            popup_7ae71d0e4dd44f07a6f38d70567b25e4.setContent(html_9b948ff59ef443069f47286c66c23a97);
+        
+
+        marker_214c77d324a847cdbfd32e496fd15d45.bindPopup(popup_7ae71d0e4dd44f07a6f38d70567b25e4)
+        ;
+
+        
+    
+</script>
